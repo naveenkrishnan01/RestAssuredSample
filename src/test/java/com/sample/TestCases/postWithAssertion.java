@@ -8,6 +8,11 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
+  /*
+     Create a pojo objects (javaObjects class)
+     Pass the value into the post boy payload using the pojoo objects
+     This is example of post request
+   */
 public class postWithAssertion {
 
     postBodyEntities addBody = new postBodyEntities(20, "Dare Devil20",
@@ -33,9 +38,7 @@ public class postWithAssertion {
                      Thread.sleep(2000);
 
         System.out.println(resp.statusLine());
-//        String name1 = resp.path("$.name").toString();
-//        Assert.assertEquals("Dare Devil9", name1);
-//        System.out.println(name1);
+
     }
 
 

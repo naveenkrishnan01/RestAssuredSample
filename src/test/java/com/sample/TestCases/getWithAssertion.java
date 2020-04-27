@@ -14,6 +14,9 @@ import io.restassured.parsing.Parser;
 
 public class getWithAssertion {
 
+    /*
+      Get a specific video game from the api call
+     */
 
     @Test()
     public void getVideoGames() {
@@ -32,6 +35,11 @@ public class getWithAssertion {
         Assert.assertEquals("Resident Evil 4", name1);
         System.out.println(name1);
     }
+
+    /*
+    Get the first 10 records and store them in a collection
+    Loop thru to verify the video game name
+     */
 
     @Test()
     public void getAllVideoGames() {
