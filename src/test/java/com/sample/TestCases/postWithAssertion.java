@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 
   /*
      Create a pojo objects (javaObjects class)
-     Pass the value into the post boy payload using the pojoo objects
+     Pass the value into the post body payload using the pojo objects
      This is example of post request
    */
 public class postWithAssertion {
