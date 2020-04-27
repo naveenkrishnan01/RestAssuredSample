@@ -5,7 +5,7 @@ There are certain pre-requisites that is needed to set up to test api end-points
   - Fork this project into your local machine 
   [https://github.com/james-willett/VideoGameDB] VideoGame project 
   - Run the gradle script as mentioned in the videoGame project README file
-  - Launch this url [http://localhost:8080/swagger-ui/index.html#/]
+  - Go to [http://localhost:8080/swagger-ui/index.html#/] Launch this url
 
 ### Running RestAssured Test
 
