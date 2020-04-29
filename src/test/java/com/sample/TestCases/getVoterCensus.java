@@ -1,3 +1,4 @@
+/*
 package com.sample.TestCases;
 
 import io.restassured.response.Response;
@@ -7,6 +8,7 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 
 public class getVoterCensus {
+*/
 
      /*
       This is the structure but the api key should not be stored on github.
