@@ -25,7 +25,7 @@ public class getWithAssertion {
         given().
                 header("Content-Type", "application/json")
                 .when().
-                get("http://localhost:8080/app/videogames/1").
+                get("http://18.212.14.152:8080/app/videogames/1").
                 then().
                 statusCode(200)
                 .log().all()
@@ -49,7 +49,7 @@ public class getWithAssertion {
                     given().
                             header("Content-Type", "application/json")
                             .when().
-                            get("http://localhost:8080/app/videogames/" + i).
+                            get("http://18.212.14.152:8080/app/videogames/" + i).
                             then().
                             statusCode(200)
                            // .log().all()

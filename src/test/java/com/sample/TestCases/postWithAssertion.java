@@ -29,7 +29,7 @@ public class postWithAssertion {
                         .body(addBody)
                         .when().
                         log().all().
-                        post("http://localhost:8080/app/videogames").
+                        post("http://18.212.14.152:8080/app/videogames").
                         then().
                         log().
                         ifError().
