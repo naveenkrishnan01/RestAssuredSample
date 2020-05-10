@@ -41,7 +41,7 @@ public class getWithAssertion {
     Loop thru to verify the video game name
      */
 
-    @Test(enabled=false)
+    @Test()
     public void getAllVideoGames() {
 
         for (int i = 1; i < 10; i++) {
