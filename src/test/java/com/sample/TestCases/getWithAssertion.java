@@ -9,6 +9,7 @@ import javax.swing.text.html.parser.Entity;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
+import org.testng.*;
 
 import io.restassured.parsing.Parser;
 
@@ -25,7 +26,7 @@ public class getWithAssertion {
         given().
                 header("Content-Type", "application/json")
                 .when().
-                get("http://18.212.14.152:8080/app/videogames/1").
+                get("http://localhost:8080/app/videogames/1").
                 then().
                 statusCode(200)
                 .log().all()
@@ -49,7 +50,7 @@ public class getWithAssertion {
                     given().
                             header("Content-Type", "application/json")
                             .when().
-                            get("http://18.212.14.152:8080/app/videogames/" + i).
+                            get("http://localhost:8080/app/videogames/" + i).
                             then().
                             statusCode(200)
                            // .log().all()
