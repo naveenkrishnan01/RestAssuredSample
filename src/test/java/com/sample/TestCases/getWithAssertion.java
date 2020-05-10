@@ -41,7 +41,7 @@ public class getWithAssertion {
     Loop thru to verify the video game name
      */
 
-    @Test()
+    @Test(enabled=false)
     public void getAllVideoGames() {
 
         for (int i = 1; i < 10; i++) {
@@ -72,5 +72,11 @@ public class getWithAssertion {
         }
     }
 
-}
+    @Test()
+    public void testpoc() {
+
+        System.out.println("Welcome poc test ci-cd");
+
+    }
+    }
 
