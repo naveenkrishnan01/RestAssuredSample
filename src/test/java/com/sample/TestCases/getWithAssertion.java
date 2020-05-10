@@ -1,7 +1,6 @@
 package com.sample.TestCases;
 
 import io.restassured.RestAssured;
-import org.junit.Test;
 import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
 import org.junit.Assert;
@@ -9,7 +8,7 @@ import javax.swing.text.html.parser.Entity;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
-import org.testng.*;
+import org.testng.annotations.Test;
 
 import io.restassured.parsing.Parser;
 
@@ -19,7 +18,7 @@ public class getWithAssertion {
       Get a specific video game from the api call
      */
 
-    @Test()
+    @Test(enabled=false)
     public void getVideoGames() {
 
         Response resp=
@@ -42,7 +41,7 @@ public class getWithAssertion {
     Loop thru to verify the video game name
      */
 
-    @Test()
+    @Test(enabled=false)
     public void getAllVideoGames() {
 
         for (int i = 1; i < 10; i++) {

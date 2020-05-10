@@ -4,7 +4,8 @@ import com.javaObjects.postBodyEntities;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Assert;
-import org.junit.Test;
+import org.testng.*;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
@@ -20,7 +21,7 @@ public class postWithAssertion {
 
 
 
-    @Test()
+    @Test(enabled=false)
     public void postVideoGames() throws InterruptedException {
 
         Response resp=
