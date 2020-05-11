@@ -75,7 +75,7 @@ public class getWithAssertion {
     @Test()
     public void testpoc() {
 
-        System.out.println("Welcome poc test ci-cd for Naresh ");
+        System.out.println("Welcome poc test ci-cd for demo ");
 
     }
     }
