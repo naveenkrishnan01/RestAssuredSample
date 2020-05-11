@@ -1,14 +1,14 @@
-/*
+
 package com.sample.TestCases;
 
 import io.restassured.response.Response;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class getVoterCensus {
-*/
+public class getweatherapp {
+
 
      /*
       This is the structure but the api key should not be stored on github.
@@ -16,32 +16,32 @@ public class getVoterCensus {
       The assertion can be done all of the response object but i have done for two of the fields
      */
 
-  /*
+
     @Test()
-    public void electionQuery() {
+    public void getLondonWeatherQuery() {
 
         Response resp=
                 given().
                         header("Content-Type", "application/json")
                         .when().
-                        get("https://www.googleapis.com/civicinfo/v2/elections?key=[YOUR_API_KEY]").
+                        get("http://api.openweathermap.org/data/2.5/weather?q=London&appid=9ef0dcd0eb0d9677b5d85aab7d51e100").
                         then().
                         statusCode(200)
                         .log().all()
                         .extract().response();
 
-         int id  = resp.path("s.id");
-        String name = resp.path("$.name").toString();
+        String weather_condition  = resp.jsonPath().getString("weather.description[0]");
+        String city_name = resp.jsonPath().getString("name");
 
 
-        Assert.assertEquals("2000", id);
-        Assert.assertEquals("VIP Test Election", name);
+        Assert.assertEquals("clear sky", weather_condition);
+        Assert.assertEquals("London", city_name);
 
-        System.out.println(name1);
+        System.out.println("Display City Name: " + city_name);
     }
-*/
- /*
-  @Test()
+
+
+  @Test(enabled=false)
   public void getCivicInfo() {
 
        String address_info = "3922 Emerald st Torrance, CA, 90505";
@@ -71,4 +71,3 @@ public class getVoterCensus {
   }
 
 }
-*/
