@@ -24,7 +24,7 @@ public class getweatherapp {
                 given().
                         header("Content-Type", "application/json")
                         .when().
-                        get("http://api.openweathermap.org/data/2.5/weather?q=Sacramento&appid=9ef0dcd0eb0d9677b5d85aab7d51e100").
+                        get("http://api.openweathermap.org/data/2.5/weather?q=London&appid=9ef0dcd0eb0d9677b5d85aab7d51e100").
                         then().
                         statusCode(200)
                         .log().all()
@@ -34,8 +34,31 @@ public class getweatherapp {
         String city_name = resp.jsonPath().getString("name");
 
 
-        Assert.assertEquals("overcast clouds", weather_condition);
-        Assert.assertEquals("Sacramento", city_name);
+        Assert.assertEquals("clear sky", weather_condition);
+        Assert.assertEquals("London", city_name);
+
+        System.out.println("Display City Name: " + city_name);
+    }
+
+    @Test()
+    public void getLosAnglesWeatherQuery() {
+
+        Response resp=
+                given().
+                        header("Content-Type", "application/json")
+                        .when().
+                        get("http://api.openweathermap.org/data/2.5/weather?q=Los Angeles&appid=9ef0dcd0eb0d9677b5d85aab7d51e100").
+                        then().
+                        statusCode(200)
+                        .log().all()
+                        .extract().response();
+
+        String weather_condition  = resp.jsonPath().getString("weather.description[0]");
+        String city_name = resp.jsonPath().getString("name");
+
+
+        Assert.assertEquals("clear sky", weather_condition);
+        Assert.assertEquals("Los Angeles", city_name);
 
         System.out.println("Display City Name: " + city_name);
     }
