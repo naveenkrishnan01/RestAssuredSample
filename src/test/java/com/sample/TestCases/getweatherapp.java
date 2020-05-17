@@ -34,7 +34,7 @@ public class getweatherapp {
         String city_name = resp.jsonPath().getString("name");
 
 
-        Assert.assertEquals("scattered clouds", weather_condition);
+        Assert.assertEquals("overcast clouds", weather_condition);
         Assert.assertEquals("London", city_name);
 
         System.out.println("Display City Name: " + city_name);
@@ -58,7 +58,7 @@ public class getweatherapp {
         String city_name = resp.jsonPath().getString("name");
 
 
-        Assert.assertEquals("clear sky", weather_condition);
+        Assert.assertEquals("broken clouds", weather_condition);
         Assert.assertEquals("Los Angeles", city_name);
 
         System.out.println("Display City Name: " + city_name);
