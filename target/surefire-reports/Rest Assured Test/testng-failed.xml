@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Rest Assured Test]" parallel="classes">
+  <test thread-count="5" verbose="0" name="Regression suite 1(failed)" parallel="classes">
+    <classes>
+      <class name="com.sample.TestCases.getWithAssertion">
+        <methods>
+          <include name="getAllVideoGames"/>
+        </methods>
+      </class> <!-- com.sample.TestCases.getWithAssertion -->
+    </classes>
+  </test> <!-- Regression suite 1(failed) -->
+</suite> <!-- Failed suite [Rest Assured Test] -->

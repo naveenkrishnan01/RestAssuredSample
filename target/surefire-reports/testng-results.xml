@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="6" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="5074" started-at="2020-05-17T14:45:44Z" finished-at="2020-05-17T14:45:49Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="5074" started-at="2020-05-17T14:45:44Z" finished-at="2020-05-17T14:45:49Z">
+      <class name="com.sample.TestCases.getweatherapp">
+        <test-method status="PASS" signature="getLondonWeatherQuery()[pri:0, instance:com.sample.TestCases.getweatherapp@6f7fd0e6]" name="getLondonWeatherQuery" duration-ms="4698" started-at="2020-05-17T14:45:44Z" finished-at="2020-05-17T14:45:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLondonWeatherQuery -->
+        <test-method status="PASS" signature="getLosAnglesWeatherQuery()[pri:0, instance:com.sample.TestCases.getweatherapp@6f7fd0e6]" name="getLosAnglesWeatherQuery" duration-ms="326" started-at="2020-05-17T14:45:49Z" finished-at="2020-05-17T14:45:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLosAnglesWeatherQuery -->
+      </class> <!-- com.sample.TestCases.getweatherapp -->
+      <class name="com.sample.TestCases.getWithAssertion">
+        <test-method status="PASS" signature="testpoc()[pri:0, instance:com.sample.TestCases.getWithAssertion@27efef64]" name="testpoc" duration-ms="11" started-at="2020-05-17T14:45:44Z" finished-at="2020-05-17T14:45:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testpoc -->
+      </class> <!-- com.sample.TestCases.getWithAssertion -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
