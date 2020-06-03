@@ -17,7 +17,7 @@ public class getweatherapp {
      */
 
 
-    @Test()
+    @Test(priority = 2)
     public void getLondonWeatherQuery() {
 
         Response resp=
@@ -41,7 +41,7 @@ public class getweatherapp {
         System.out.println("Verify Jenkins Change");
     }
 
-    @Test()
+    @Test(priority = 1)
     public void getLosAnglesWeatherQuery() {
 
         Response resp=
@@ -58,7 +58,7 @@ public class getweatherapp {
         String city_name = resp.jsonPath().getString("name");
 
 
-        Assert.assertEquals("overcast clouds", weather_condition);
+        Assert.assertEquals("clear sky", weather_condition);
         Assert.assertEquals("Los Angeles", city_name);
 
         System.out.println("Display City Name: " + city_name);
