@@ -2,22 +2,22 @@ package com.javaObjects;
 
 public class payloadStudent {
 
-    private Student playWindow;
+    private Student play;
     private boolean propogate;
 
 
     public payloadStudent(Student student, boolean propogate) {
-        this.playWindow = student;
+        this.play = student;
         this.propogate = propogate;
 
     }
 
     public Student getPlayWindow() {
-        return playWindow;
+        return play;
     }
 
     public void setPlayWindow(Student playWindow) {
-        this.playWindow = playWindow;
+        this.play = playWindow;
     }
 
     public boolean isPropogate() {

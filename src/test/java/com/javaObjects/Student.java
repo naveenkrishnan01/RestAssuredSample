@@ -3,35 +3,20 @@ package com.javaObjects;
 public class Student {
 
 
-    /*
-      "playWindow": {
-            "playWindowNo": 0,
-                    "windowNetwork": 246,
-                    "winStartDate": "2020-05-28T00:00:00.000Z",
-                    "winEndDate": "2020-05-31T00:00:00.000Z",
-                    "operationType": "Create",
-                    "tierAvailabilityNo": [
-            14,
-                    15,
-                    16
-        ],
-            "seasonGroupTitleNo": []
-        },
-                "propagate": true
-    }*/
-    private int playWindowName;
-    private int windowNetwork;
-    private String winStartDate;
-    private String winEndDate;
+
+    private int playWind;
+    private int windowNet;
+    private String inStartDate;
+    private String inEndDate;
     private int[] grades;
     private int [] no_grades;
 
 
-    public Student(int playWindowName, int windowNetwork, String winStartDate, String winEndDate, int[] grades, int[] no_grades) {
-        this.playWindowName = playWindowName;
-        this.windowNetwork = windowNetwork;
-        this.winStartDate = winStartDate;
-        this.winEndDate = winEndDate;
+    public Student(int playWind, int windowNet, String inStartDate, String inEndDate, int[] grades, int[] no_grades) {
+        this.playWind = playWind;
+        this.windowNet = windowNet;
+        this.inStartDate = inStartDate;
+        this.inEndDate = inEndDate;
         this.grades = grades;
         this.no_grades = no_grades;
 
@@ -43,36 +28,36 @@ public class Student {
     }
 
 
-    public int getPlayWindowName() {
-        return playWindowName;
+    public int getPlayWind() {
+        return playWind;
     }
 
-    public void setPlayWindowName(int playWindowName) {
-        this.playWindowName = playWindowName;
+    public void setPlayWind(int playWindowName) {
+        this.playWind = playWind;
     }
 
-    public int getWindowNetwork() {
-        return windowNetwork;
+    public int getWindowNet() {
+        return windowNet;
     }
 
-    public void setWindowNetwork(int windowNetwork) {
-        this.windowNetwork = windowNetwork;
+    public void setWindowNet(int windowNet) {
+        this.windowNet = windowNet;
     }
 
-    public String getWinStartDate() {
-        return winStartDate;
+    public String getinStartDate() {
+        return inStartDate;
     }
 
-    public void setWinStartDate(String winStartDate) {
-        this.winStartDate = winStartDate;
+    public void setinStartDate(String winStartDate) {
+        this.inStartDate = inStartDate;
     }
 
-    public String getWinEndDate() {
-        return winEndDate;
+    public String getinEndDate() {
+        return inEndDate;
     }
 
-    public void setWinEndDate(String winEndDate) {
-        this.winEndDate = winEndDate;
+    public void setinEndDate(String winEndDate) {
+        this.inEndDate = inEndDate;
     }
 
     public int[] getGrades() {

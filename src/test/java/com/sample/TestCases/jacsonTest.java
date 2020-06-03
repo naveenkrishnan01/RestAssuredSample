@@ -27,10 +27,10 @@ public class jacsonTest {
       //  grades.setPlayWindow("{");
 
         Student student = new Student();
-        student.setPlayWindowName(0);
-        student.setWindowNetwork(246);
-        student.setWinStartDate("2020-05-28T00:00:00.000Z");
-        student.setWinEndDate("2020-05-31T00:00:00.000Z");
+        student.setPlayWind(0);
+        student.setWindowNet(246);
+        student.setinStartDate("2020-05-28T00:00:00.000Z");
+        student.setinEndDate("2020-05-31T00:00:00.000Z");
         student.setGrades(new int[] {10,20,30});
         student.setNo_grades(new int[] {});
 
