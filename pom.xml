@@ -15,7 +15,7 @@
         <junit.version>4.12</junit.version>
         <aspectj.version>1.8.10</aspectj.version>
         <junit.dataprovider.version>2.4</junit.dataprovider.version>
-        <jackson.databind.version>2.9.8</jackson.databind.version>
+        <jackson.databind.version>2.10.0.pr1</jackson.databind.version>
     </properties>
     <dependencies>
         <dependency>
